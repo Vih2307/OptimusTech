@@ -1,0 +1,262 @@
+:root {
+    --vermelho: #8e2424;
+    --preto: #101828;
+    --cinza: #3a404e;
+    --cinza-fraco: #667085;
+    --cinza-mais-fraco: #98a2b3;
+
+    --fonte: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+/*Cabeçalho*/
+.cabecalho {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: 1.2em 6em 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo h1 {
+    color: var(--cinza);
+}
+
+.navegacao__container {
+    padding-right: 12em;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.menu__item {
+    color: var(--cinza-fraco);
+}
+
+.perfil {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.perfil__container {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.perfil__entrar {
+    color: var(--cinza-fraco);
+}
+
+.perfil__cadastro {
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #8e2424;
+    background: #8e2424;
+}
+
+/*Mini-texto*/
+.principal-minitexto,
+.depoimentos-minitexto {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+/*Talentos*/
+.talentos-container {
+    margin-top: 10em;
+    text-align: center;
+}
+
+/*Principal*/
+.principal-container {
+    text-align: center;
+}
+
+.principal__frase-efeito {
+    color: var(--preto);
+    font-weight: 600;
+    font-size: 3em;
+    padding: 1.5em 0;
+}
+
+.texto-suporte {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--cinza-fraco);
+    line-height: 1.5em;
+}
+
+/*Métricas*/
+.metricas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 3em 6em;
+}
+
+.metricas-numero {
+    font-weight: 600;
+    font-size: 3.75em;
+    color: var(--vermelho);
+    padding: 0.5em 0;
+}
+
+.metricas-titulo {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--preto);
+    padding-bottom: 0.5em;
+}
+
+.metricas-titulo + p {
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--cinza-fraco);
+}
+
+.talentos-minitexto {
+    color: var(--vermelho);
+    font-weight: 600;
+    border-radius: 16px;
+    background: rgba(197, 156, 156, 0.767);
+    padding: 4px 12px;
+}
+
+/*Titulos*/
+.talentos-titulo,
+.depoimentos-titulo,
+.inscricao__titulo {
+    font-weight: 600;
+    font-size: 2.25em;
+    padding: 1em;
+    text-align: center;
+}
+
+.talentos-titulo + p {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--cinza-fraco);
+    padding-bottom: 4em;
+}
+
+.talentos-imagem {
+    width: 80%;
+    border-radius: 1em;
+}
+
+/*Vagas*/
+.vaga-container {
+    display: grid;
+    grid-template-columns: 25% 60% 25%;
+    padding: 3em 0;
+}
+
+.vaga,
+.vaga-area {
+    grid-column-start: 2;
+}
+.vaga-area {
+    font-weight: 600;
+    font-size: 1.25em;
+    color: var(--preto);
+    padding: 2em 0;
+}
+
+.vaga {
+    padding: 2em 1.5em;
+}
+
+.vaga__titulo {
+    font-weight: 500;
+    font-size: 1.125em;
+    color: var(--preto);
+}
+
+.informacoes {
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--cinza-fraco);
+    padding: 2em 0;
+}
+
+.vaga__carga-horaria {
+    padding-right: 2em;
+}
+
+/*Depoimentos*/
+.depoimentos-container {
+    text-align: center;
+    padding-top: 6em;
+}
+
+.depoimentos__perfil {
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0.5em 0;
+}
+
+.depoimentos__cargo {
+    font-weight: 400;
+    font-size: 0.875;
+    color: var(--cinza-fraco);
+}
+
+/*Inscricao*/
+.inscricao-container {
+    text-align: center;
+}
+
+.inscricao__titulo {
+    padding-top: 6em;
+}
+
+.inscricao__titulo + p {
+    color: var(--cinza-fraco);
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+.inscricao__cadastro {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+.inscricao__botao {
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #8e2424;
+    background: #8e2424;
+}
+
+.copyright {
+    font-size: 1em;
+    font-weight: 400;
+    padding-bottom: 4em;
+    color: var(--cinza-mais-fraco);
+}
+
+#entrada-email {
+    width: 250px;
+    padding: 0.75em 1em;
+    border-radius: 8px;
+    color: var(--cinza-fraco);
+    border: 1px solid var(--cinza);
+}
